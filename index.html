@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width , scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Simple Calculator</title>
+</head>
+<body>
+    <h1 id="h1">Simple Calculator</h1><br>
+    <img id="image" src="calc.png" height="300" width="290"> <br>
+    <input id="int1" type="number" placeholder="Enter some value" >
+    <input id="int2" type="number" placeholder="Enter some value" ><br>
+    <button id="add" onclick="addition()">+</button>
+    <button id="sub" onclick="subtraction()">-</button>
+    <button id="multi" onclick="multiplication()">x</button>
+    <button id="div" onclick="division()">%</button><br>
+    <a href="index.html"><button id="ref" href="#">Refresh tabs</button> </a>
+    <h2 id="result" >Result</h2>
+    <audio id="aud">
+        <source src="clic.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="audd">
+        <source src="enter.mp3" type="audio/mpeg">
+    </audio>
+</body>
+<script>
+    var x=0;
+    var y=0;
+    var z=0;
+    var snd=document.getElementById("aud");
+    var sndd=document.getElementById("audd");
+    function addition(){
+        x=(document.getElementById("int1").value);
+        y=(document.getElementById("int2").value);
+        if(x=="" || y==""){
+            sndd.play();
+            alert("Please enter a number");
+            document.getElementById("int1").style.border="solid 4px red";
+            document.getElementById("int2").style.border="solid 4px red";
+        }
+        else{
+             document.getElementById("int1").style.border="";
+             document.getElementById("int2").style.border="";
+             z=Number(x)+Number(y);
+             document.getElementById("result").innerHTML=z;
+             snd.play();
+        }
+    }
+    function subtraction(){
+        x=(document.getElementById("int1").value);
+        y=(document.getElementById("int2").value);
+        if(x=="" || y==""){
+            sndd.play();
+            alert("Please enter a number");
+            document.getElementById("int1").style.border="solid 4px red";
+            document.getElementById("int2").style.border="solid 4px red";
+        }
+        else{
+             document.getElementById("int1").style.border="";
+             document.getElementById("int2").style.border="";
+             z=Number(x)-Number(y);
+             document.getElementById("result").innerHTML=z;
+             snd.play();
+        }
+    }
+    function multiplication(){
+        x=(document.getElementById("int1").value);
+        y=(document.getElementById("int2").value);
+        if(x=="" || y==""){
+            sndd.play();
+            alert("Please enter a number");
+            document.getElementById("int1").style.border="solid 4px red";
+            document.getElementById("int2").style.border="solid 4px red";
+        }
+        else{
+             document.getElementById("int1").style.border="";
+             document.getElementById("int2").style.border="";
+             z=Number(x)*Number(y);
+             document.getElementById("result").innerHTML=z;
+             snd.play();
+        }
+    }
+    function division(){
+        x=(document.getElementById("int1").value);
+        y=(document.getElementById("int2").value);
+        if(x=="" || y==""){
+            sndd.play();
+            alert("Please enter a number");
+            document.getElementById("int1").style.border="solid 4px red";
+            document.getElementById("int2").style.border="solid 4px red";
+        }
+        else{
+             document.getElementById("int1").style.border="";
+             document.getElementById("int2").style.border="";
+             z=Number(x)/Number(y);
+             z=z.toFixed(6);
+             document.getElementById("result").innerHTML=z;
+             snd.play();
+        }
+    }
+</script>
+</html>

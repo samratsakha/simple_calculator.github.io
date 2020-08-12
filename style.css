@@ -1,0 +1,78 @@
+body{
+    background-image: url("back.jpg");
+    background-color: aquamarine;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 400px;
+    top: 10px;
+    font-style: italic;
+}
+#h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#add{
+    position: relative;
+    top: 10px;
+    left: 10px;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    font-size: xx-large;
+    border: solid 3px black;
+}
+#sub{
+    position: relative;
+    top: 10px;
+    left: 50px;
+    height: 40px;
+    width: 40px;
+    border-color: solid 10px green;
+    border-radius: 20px;
+    font-size: xx-large;
+    border: solid 3px black;
+}
+#multi{
+    position: relative;
+    top: 10px;
+    left: 90px;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    font-size: xx-large;
+    border: solid 3px black;
+}
+#div{
+    position: relative;
+    top: 10px;
+    left: 125px;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    font-size: xx-large;
+    border: solid 3px black;
+}
+#ref{
+    position: relative;
+    top: 20px;
+    left: 100px;
+}
+#result{
+    position: relative;
+    left: 0px;
+    top: -150px;
+}
+#int1{
+    border: solid 3px green;
+    border-radius: 10px;
+    height: 20px;
+}
+#int2{
+    border: solid 3px green;
+    border-radius: 10px;
+    height: 20px;
+}
+#ref{
+    border: solid 3px blue;
+    border-radius: 10px;
+}
