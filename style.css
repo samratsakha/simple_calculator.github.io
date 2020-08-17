@@ -1,78 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body{
-    background-image: url("back.jpg");
-    background-color: aquamarine;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: absolute;
-    left: 400px;
-    top: 10px;
-    font-style: italic;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: rgb(90, 18, 18);
+    color: white;
+    margin: 2%;
 }
-#h1{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+.int{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
+
+.int input{
+    margin: 4%;
+    height: 30px;
+    border: solid 4px black;
+    border-radius: 20px;
+}
+
+.btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    
+}
+
+.btn button{
+    margin: 5%;
+}
+
 #add{
-    position: relative;
-    top: 10px;
-    left: 10px;
-    height: 40px;
-    width: 40px;
-    border-radius: 20px;
-    font-size: xx-large;
+    height: 50px;
+    width: 100px;
+    border-radius: 40px;
     border: solid 3px black;
+    background: transparent ;
+    font-size: xx-large;
+    cursor: pointer;
 }
+
+#add:hover{
+    background-color: rgb(245, 0, 0);
+}
+
 #sub{
-    position: relative;
-    top: 10px;
-    left: 50px;
-    height: 40px;
-    width: 40px;
-    border-color: solid 10px green;
-    border-radius: 20px;
-    font-size: xx-large;
+    height: 50px;
+    width: 100px;
+    border-radius: 40px;
     border: solid 3px black;
+    background: transparent ;
+    font-size: xx-large;
+    cursor: pointer;
 }
+
+#sub:hover{
+    background-color: rgb(245, 0, 0);
+}
+
 #multi{
-    position: relative;
-    top: 10px;
-    left: 90px;
-    height: 40px;
-    width: 40px;
-    border-radius: 20px;
-    font-size: xx-large;
+    height: 50px;
+    width: 100px;
+    border-radius: 40px;
     border: solid 3px black;
+    background: transparent ;
+    font-size: xx-large;
+    cursor: pointer;
 }
+
+#multi:hover{
+    background-color: rgb(245, 0, 0);
+}
+
 #div{
-    position: relative;
-    top: 10px;
-    left: 125px;
-    height: 40px;
-    width: 40px;
-    border-radius: 20px;
-    font-size: xx-large;
+    height: 50px;
+    width: 100px;
+    border-radius: 40px;
     border: solid 3px black;
+    background: transparent ;
+    font-size: xx-large;
+    cursor: pointer;
 }
+
+#div:hover{
+    background-color: rgb(245, 0, 0);
+}
+
 #ref{
-    position: relative;
-    top: 20px;
-    left: 100px;
+    height: 50px;
+    width: 80px;
+    border-radius: 40px;
+    border: solid 3px black;
+    background: transparent ;
+    cursor: pointer;
+    margin: 5%;
 }
-#result{
-    position: relative;
-    left: 0px;
-    top: -150px;
-}
-#int1{
-    border: solid 3px green;
-    border-radius: 10px;
-    height: 20px;
-}
-#int2{
-    border: solid 3px green;
-    border-radius: 10px;
-    height: 20px;
-}
-#ref{
-    border: solid 3px blue;
-    border-radius: 10px;
+
+#ref:hover{
+    background-color: rgb(245, 0, 0);
 }
